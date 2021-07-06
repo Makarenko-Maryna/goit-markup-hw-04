@@ -30,18 +30,14 @@ body {
   padding: 0 15px;
 }
 
-/* .hero, .features-part, section {
-  padding: 94px 0 94px 0;
-} */
+section {
+  padding: 94px 0;
+}
 
 .header {
   border-bottom: 1px solid #ececec;
   display: flex;
   justify-content: space-between;
-}
-
-section {
-  padding: 94px 0;
 }
 
 .logo-link {
@@ -50,14 +46,15 @@ section {
   align-items: center;
   margin-right: 92px;
   text-decoration: none;
+  font-size: 26px;
+  color: var(--titleColor--);
 }
 
 .span {
   font-family: Raleway;
   color: #2196f3;
 }
-.activPage,
-.link a:focus {
+.activPage {
   color: var(--brendColor--);
 }
 
@@ -70,6 +67,7 @@ section {
 .nav-header {
   display: flex;
   justify-content: space-between;
+  font-weight: 500;
 }
 
 .nav-header li {
@@ -134,8 +132,8 @@ section {
 
 .hero {
   background-color: var(--footerColor--);
-  /* background-position: center;
-  background-repeat: no-repeat; */
+  background-position: center;
+  background-repeat: no-repeat;
   height: 600px;
   display: flex;
   justify-content: center;
@@ -285,17 +283,35 @@ ul {
 
 .client ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 
-/* .client li {
+.client-list {
+  padding: 16px 32px;
+  margin-right: 30px;
+  display: flex;
   width: 170px;
   height: 92px;
-} */
+  border-radius: 4px;
+  border: 1px solid var(--socialLink--);
+  align-items: center;
+}
 
-/* .icon-feat {
-  padding: 25px 100px;
-} */
+.client-icons {
+  fill: var(--socialLink--);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client-list:hover {
+  border: 1px solid var(--brendColor--);
+}
+.client-icons:hover {
+  transition-property: border, color;
+  fill: var(--brendColor--);
+}
+
 /* section6 */
 
 /* portfolio */
@@ -327,6 +343,7 @@ ul {
   display: flex;
   flex-basis: calc(100% / 3 - var(--white--));
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .example-of-prodject {
@@ -358,12 +375,6 @@ ul {
   background-repeat: no-repeat;
   color: var(--white--);
   padding: 60px 0;
-
-  display: block;
-  /* justify-content: flex-start; */
-}
-
-.footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -378,6 +389,9 @@ ul {
 .stily-studio {
   color: var(--white--);
   text-decoration: none;
+}
+.social {
+  margin-left: 70px;
 }
 .social-footer {
   display: flex;
@@ -407,5 +421,25 @@ ul {
   width: 20px;
   height: 20px;
   margin: 10px;
+}
+
+.icon-footer svg {
+  fill: white;
+  width: 10px;
+  height: 10px;
+}
+
+.icon-footer {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  fill: white;
+}
+
+.icon-footer:hover {
+  background-color: var(--brendColor--);
 }
 /* footer */
