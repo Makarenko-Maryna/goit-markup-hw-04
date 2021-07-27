@@ -37,6 +37,7 @@ section {
 .header {
   border-bottom: 1px solid #ececec;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -45,6 +46,8 @@ section {
   font-weight: 700;
   align-items: center;
   margin-right: 92px;
+  margin-top: 24px;
+  margin-bottom: 25px;
   text-decoration: none;
   font-size: 26px;
   color: var(--titleColor--);
@@ -127,6 +130,16 @@ section {
   background-image: url(../image/icons/smartphone.svg);
   width: 10px;
   height: 16px;
+}
+.contact-em a:hover,
+.contact-em a:focus {
+  color: var(--brendColor--);
+  fill: var(--brendColor--);
+}
+.contact-tel a:hover,
+.contact-tel a:focus {
+  color: var(--brendColor--);
+  fill: var(--brendColor--);
 }
 /* header */
 
