@@ -441,9 +441,12 @@ ul {
 .footer .h3-features {
   color: var(--white--);
 }
-.footer-adress {
-  margin-right: 215px;
+.contact-footer {
+  margin-top: 9px;
 }
+/* .footer-adress {
+  margin-right: 215px;
+} */
 .social {
   margin-right: 70px;
 }
