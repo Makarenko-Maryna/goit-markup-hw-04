@@ -20,13 +20,29 @@
             <nav class="nav">
                 <a href="" class="logo-link"><span class="span">Web</span>Studio</a>
                 <ul class="nav-header">
-                    <li class="navList"><a href="./index.html">Студия</a></li>
-                    <li class="navList"><a href="./portfolio.html" class="activPage">Портфолио</a></li>
-                    <li class="navList"><a href="">Контакты</a></li>
+                    <li class="navList"><a class="nav-item__link activPage" href="./index.html">Студия</a></li>
+                    <li class="navList"><a class="nav-item__link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="navList"><a class="nav-item__link" href="">Контакты</a></li>
                 </ul>
                 <ul class="contact-header">
-                    <li class="contact"><a href="email:info@devstudio.com">info@devstudio.com</a></li>
-                    <li class="contact"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    <li class="contact-em">
+                        <a class="contact-em__link" href="email:info@devstudio.com">
+                            <svg class="header__icon" width="43" height="32">
+                                <path
+                                    d="M14.5 0H1.50001C0.672854 0 0 0.672853 0 1.50001V10.5C0 11.3271 0.672854 12 1.50001 12H14.5C15.3271 12 16 11.3271 16 10.5V1.50001C16 0.672853 15.3271 0 14.5 0ZM14.5 0.999994C14.5679 0.999994 14.6325 1.01409 14.6916 1.0387L8 6.83838L1.30833 1.0387C1.36742 1.01412 1.43204 0.999994 1.49998 0.999994H14.5ZM14.5 11H1.50001C1.22414 11 0.999996 10.7759 0.999996 10.5V2.09521L7.67236 7.87792C7.76661 7.95944 7.8833 7.99999 8 7.99999C8.1167 7.99999 8.23339 7.95948 8.32764 7.87792L15 2.09521V10.5C15 10.7759 14.7759 11 14.5 11Z" />
+                            </svg>
+                            info@devstudio.com</a>
+                    </li>
+                    <li class="contact-tel">
+                        <a class="contact-tel__link" href="tel:+380961111111">
+                            <svg class="header__icon" width="20" height="32">
+                                <path
+                                    d="M8.5 0H1.5C0.672848 0 0 0.672848 0 1.5V14.5C0 15.3272 0.672848 16 1.5 16H8.5C9.32715 16 10 15.3272 10 14.5V1.5C10 0.672848 9.32715 0 8.5 0ZM1.5 1H8.5C8.77588 1 9 1.22412 9 1.5V12H1V1.5C1 1.22412 1.22412 1 1.5 1ZM8.5 15H1.5C1.22412 15 1 14.7759 1 14.5V13H9V14.5C9 14.7759 8.77588 15 8.5 15Z" />
+                                <path
+                                    d="M2.35355 13.7389C2.54882 13.9213 2.54882 14.2169 2.35355 14.3992C2.15828 14.5816 1.84172 14.5816 1.64645 14.3992C1.45118 14.2169 1.45118 13.9213 1.64645 13.7389C1.84172 13.5566 2.15828 13.5566 2.35355 13.7389Z" />
+                            </svg>
+                            +38 096 111 11 11</a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -36,21 +52,21 @@
     <div class="conteiner">
         <h1></h1>
         <!-- Фильтр по портфолио -->
-        <ul class="button">
-            <li class="portfolio-buttom">
-                <button type="button">Все</button>
+        <ul class="button__list">
+            <li class="portfolio-item">
+                <button class="portfolio__button button" type="button">Все</button>
             </li>
-            <li class="portfolio-buttom">
-                <button type="button">Веб-сайты</button>
+            <li class="portfolio-item">
+                <button class="portfolio__button button" type="button">Веб-сайты</button>
             </li>
-            <li class="portfolio-buttom">
-                <button type="button">Приложения</button>
+            <li class="portfolio-item">
+                <button class="portfolio__button button" type="button">Приложения</button>
             </li>
-            <li class="portfolio-buttom">
-                <button type="button">Дизайн</button>
+            <li class="portfolio-item">
+                <button class="portfolio__button button" type="button">Дизайн</button>
             </li>
-            <li class="portfolio-buttom">
-                <button type="button">Маркетинг</button>
+            <li class="portfolio-item">
+                <button class="portfolio__button button" type="button">Маркетинг</button>
             </li>
         </ul>   
         <!-- prodject -->
@@ -103,24 +119,60 @@
         </ul>
     </div>
     </main>
-<footer class="footer">
-    <div class="conteiner">
-        <ul class="">
-            <li>
-                <a href="" class="stily-studio"><span class="span">Web</span>Studio </a>
-            </li>
-            <li>
-                <address>г. Киев, пр-т Леси Украинки, 26</address>
-            </li>
-            <li>
-                <a href="email:info@example.com">info@example.com</a>
-            </li>
-            <li>
-                <a href="tel:+380991111111">+38 099 111 11 11</a>
-            </li>
-        </ul>
-    </div>
-</footer>
+    <footer class="footer">
+        <div class="conteiner">
+            <div class="footer-adress">
+                <ul>
+                    <li>
+                        <a href="" class="stily-studio"><span class="span">Web</span>Studio </a>
+                    </li>
+                    <li>
+                        <address>г. Киев, пр-т Леси Украинки, 26</address>
+                    </li>
+                    <li class="contact-footer">
+                        <a href="email:info@example.com">info@example.com</a>
+                    </li>
+                    <li class="contact-footer">
+                        <a href="tel:+380991111111">+38 099 111 11 11</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3 class="footer__title">присоединяйтесь</h3>
+                <ul class="social-list footer-social__list">
+                    <li>
+                        <a href=""></a>
+                        <!-- <img src="image/icons/insta.svg" alt="insta"> -->
+                        <svg class="social-icon">
+                            <use href="./image/icons/sprite.svg#icon-insta"></use>
+                        </svg>
+                    </li>
+    
+                    <li>
+                        <a href=""></a>
+                        <!-- <img src="image/icons/twitter.svg" alt="twit"> -->
+                        <svg class="social-icon">
+                            <use href="./image/icons/sprite.svg#icon-twitter"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <a href=""></a>
+                        <!-- <img src="image/icons/facebook.svg" alt="fb"> -->
+                        <svg class="social-icon">
+                            <use href="./image/icons/sprite.svg#icon-facebook"></use>
+                        </svg>
+                    </li>
+                    <li>
+                        <a href=""></a>
+                        <!-- <img src="image/icons/linkedin.svg" alt="in"> -->
+                        <svg class="social-icon">
+                            <use href="./image/icons/sprite.svg#icon-linkedin"></use>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
